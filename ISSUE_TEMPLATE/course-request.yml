@@ -1,0 +1,56 @@
+---
+name: 课程建议 / Course request
+description: 建议翻译或讲解某门课程
+title: "[课程] "
+labels: ["course"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **提建议前请先看一眼授权** —— 这不是官僚流程，而是本项目的生死线。
+
+        我们已经在 [课程选择路线图](https://github.com/courselingo/courselingo/blob/main/docs/course-selection.md)
+        里核实过 24 门课。如果课程站**没有**任何许可声明，我们只能做原创讲解（不能翻译）；
+        如果**明确声明版权**，我们会直接拒绝。
+
+  - type: input
+    id: name
+    attributes:
+      label: 课程名称与学校
+      placeholder: 例如 MIT 6.006 Introduction to Algorithms
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: 课程主页
+      placeholder: https://…
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么值得做
+      description: 这门课补上了什么空白？已有中文资源多不多？
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: 你看到的授权信息（可选但很有帮助）
+      description: |
+        课程站或其源码仓库里的许可声明。注意：**徽章挂在主页不代表覆盖讲义和实验**，
+        请说明你是在哪个页面上看到的。
+
+  - type: textarea
+    id: materials
+    attributes:
+      label: 材料构成
+      description: 讲义？视频？教材？实验？各自大概有多少
+      placeholder: |
+        讲义：20 讲，每讲有 notes
+        视频：YouTube 公开
+        实验：6 个 lab，不允许公开解答

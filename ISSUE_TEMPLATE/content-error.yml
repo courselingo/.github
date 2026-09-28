@@ -1,0 +1,75 @@
+---
+name: 内容纠错 / Content error
+description: 报告讲解里的错误、讲不清、或与原文不符之处
+title: "[纠错] "
+labels: ["content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢纠错 —— **这个项目最大的敌人是「看起来讲完了，其实讲错了」。**
+
+        填写前请留意：本项目的讲解**不是译文**。如果课程/论文本身没有开放许可，
+        我们只发布自己撰写的概念讲解，因此**不会**逐句对应原文。
+        但**事实错误永远是错误**，请直接指出。
+
+  - type: input
+    id: page
+    attributes:
+      label: 页面地址
+      description: 出错页面的链接或仓库路径
+      placeholder: https://... 或 content/03-gfs/index.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: quote
+    attributes:
+      label: 有问题的原句
+      description: 请粘贴原句（含所在小节标题更好），不要只描述大意
+      placeholder: |
+        ## 三、为什么块是 64MB
+        > 块大并不会浪费空间……
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 问题类型
+      options:
+        - 事实错误（与原文/权威来源不符）
+        - 说法缺失限定条件（把「通常」写成了「一定」）
+        - 讲不清 / 看不懂（读完仍不知道结论或理由）
+        - 术语不一致（同一个概念前后译法不同）
+        - 臆造（原文并没有这么说）
+        - 配图错误或缺失
+        - 错别字 / 排版
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 依据（**强烈建议填**）
+      description: |
+        给出可核查的来源：原文讲义/论文的链接与章节、官方文档、或可复现的推理过程。
+        没有依据的纠错也会被记录，但处理优先级较低。
+      placeholder: |
+        来源：https://pdos.csail.mit.edu/6.824/notes/l-gfs.txt §5.1
+        原文：……
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议怎么改（可选）
+      description: 一句话说明改成什么
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我理解本项目只发布原创讲解，不逐句对照原文
+          required: true
