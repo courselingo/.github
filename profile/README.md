@@ -1,5 +1,10 @@
 <div align="center">
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/logo-avatar.png">
+  <img src="assets/logo.png" alt="CourseLingo 课语 · 译课 AI" width="132">
+</picture>
+
 # CourseLingo · 译课 AI
 
 **AI-powered translation & explanation for classic CS courses.**
