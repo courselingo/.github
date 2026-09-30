@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/logo-avatar.png">
-  <img src="assets/logo.png" alt="CourseLingo 课语 · 译课 AI" width="132">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/courselingo/.github/raw/main/assets/logo-avatar.png">
+  <img src="https://github.com/courselingo/.github/raw/main/assets/logo.png" alt="CourseLingo 课语 · 译课 AI" width="132">
 </picture>
 
 # CourseLingo · 译课 AI
@@ -29,7 +29,12 @@ CourseLingo 用 AI 把经典的计算机科学课程翻译并讲解成中文。
 
 > **Phase 1 · 内容生产**
 > 平台与流水线已就绪：授权闸门、术语表、配图房规、文风机检都能在 CI 里拦截。
-> MIT 6.824 已产出 3 讲讲解与 2 篇论文导读，正在继续推进。
+> **五门课程已开工**。MIT 6.5840 / 6.824 的 **12 讲**讲解与 **2 篇**论文导读已全部产出；
+> 其余四门正在逐讲推进。
+>
+> ★ **「产出」不等于「完成复核」** —— 每页分 `draft` 与 `reviewed` 两级，
+> 而**只有通过事实核对、逐图复核与陌生读者测试的页面才会提为 `reviewed`**。
+> 各课程站上标的就是这个状态，请不要把 `draft` 读成「已完成」。
 
 ## 课程路线图
 
@@ -49,10 +54,16 @@ CourseLingo 用 AI 把经典的计算机科学课程翻译并讲解成中文。
 
 ## 仓库
 
-| 仓库 | 用途 |
-| --- | --- |
-| [`.github`](https://github.com/courselingo/.github) | 组织主页与社区规范 |
-| [`courselingo`](https://github.com/courselingo/courselingo) | 平台主仓库：架构、术语规范、翻译流水线、写作与配图规范 |
+| 仓库 | 用途 | 站点 |
+| --- | --- | --- |
+| [`.github`](https://github.com/courselingo/.github) | 组织主页与社区规范 | — |
+| [`courselingo`](https://github.com/courselingo/courselingo) | 平台主仓库：架构、术语规范、翻译流水线、写作与配图规范 | — |
+| [`courselingo.github.io`](https://github.com/courselingo/courselingo.github.io) | 组织站源码 | [组织站](https://courselingo.github.io/) |
+| [`mit-6.5840`](https://github.com/courselingo/mit-6.5840) | MIT 6.5840 / 6.824 · 分布式系统 | [打开](https://courselingo.github.io/mit-6.5840/) |
+| [`cs168`](https://github.com/courselingo/cs168) | UC Berkeley CS168 · 计算机网络导论 | [打开](https://courselingo.github.io/cs168/) |
+| [`mit-6.006`](https://github.com/courselingo/mit-6.006) | MIT 6.006 · 算法导论 | [打开](https://courselingo.github.io/mit-6.006/) |
+| [`eth-ca`](https://github.com/courselingo/eth-ca) | ETH Zurich · 计算机体系结构 | [打开](https://courselingo.github.io/eth-ca/) |
+| [`mlsys-15442`](https://github.com/courselingo/mlsys-15442) | CMU 15-442 · 机器学习系统 | [打开](https://courselingo.github.io/mlsys-15442/) |
 
 ## 我们的原则
 
@@ -63,7 +74,7 @@ CourseLingo 用 AI 把经典的计算机科学课程翻译并讲解成中文。
 
 ## 参与
 
-现阶段欢迎讨论架构、术语表与课程选型。请先阅读 [`CONTRIBUTING.md`](./CONTRIBUTING.md)，也请留意各课程的授权限制 —— 侵权风险是这个项目最大的敌人。
+现阶段欢迎讨论架构、术语表与课程选型。请先阅读 [`CONTRIBUTING.md`](https://github.com/courselingo/.github/blob/main/CONTRIBUTING.md)，也请留意各课程的授权限制 —— 侵权风险是这个项目最大的敌人。
 
 ---
 
